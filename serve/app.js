@@ -1,12 +1,16 @@
 import Koa from "koa";
 import assets from "./assets";
 import views from "./views";
+import scss from "./scss";
 import jsx from "./jsx";
 import proxy from "./proxy";
 import router from "./router";
 import server from "./server";
 
 const app = new Koa();
+
+// scss
+scss(app);
 
 // jsx
 jsx(app);
